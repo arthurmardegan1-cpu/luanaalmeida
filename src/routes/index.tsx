@@ -81,7 +81,8 @@ function Index() {
           <div className="relative">
             <div className="absolute -inset-4 rounded-3xl" style={{ background: "var(--gradient-luxury)", opacity: 0.15 }} />
             <img src={luana1.url} alt="Luana Almeida — Especialista em Micropigmentação a Laser"
-              className="relative rounded-3xl object-cover w-full aspect-[4/5] shadow-2xl" />
+              className="relative rounded-3xl object-cover w-full aspect-[4/5] shadow-2xl"
+              style={{ objectPosition: "center 25%" }} />
           </div>
         </div>
       </section>
@@ -129,8 +130,9 @@ function Index() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { t: "Remoção a Laser", d: "Remoção segura e eficaz de micropigmentação antiga em sobrancelhas, lábios e olhos." },
-              { t: "Correção & Clareamento", d: "Clareia tons indesejados e prepara a pele para uma nova micropigmentação harmoniosa." },
-              { t: "Avaliação Personalizada", d: "Análise completa da sua pele e do resultado desejado, com plano de tratamento sob medida." },
+              { t: "Limpeza de Pele", d: "Higienização profunda que renova a pele, devolvendo viço, equilíbrio e luminosidade." },
+              { t: "Remoção de Tatuagem", d: "Tecnologia laser de alta precisão para clarear e remover tatuagens com segurança." },
+              { t: "Extensão de Cílios", d: "Cílios alongados com aspecto natural ou volumoso, valorizando o seu olhar." },
             ].map((s) => (
               <div key={s.t} className="group rounded-2xl border border-border bg-card p-8 hover:shadow-xl transition-all hover:-translate-y-1">
                 <div className="h-12 w-12 rounded-full flex items-center justify-center mb-6"
