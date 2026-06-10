@@ -221,7 +221,7 @@ function Index() {
           </a>
           <div className="flex flex-wrap justify-center gap-8 mt-10 text-sm opacity-90">
             <span className="inline-flex items-center gap-2"><Clock className="h-4 w-4" /> Seg–Sáb · 9h às 19h</span>
-            <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4" /> Atendimento presencial</span>
+            <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4" /> Alphaville e Atibaia</span>
           </div>
         </div>
       </section>
