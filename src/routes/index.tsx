@@ -127,7 +127,7 @@ function Index() {
             <h2 className="text-4xl md:text-5xl mb-4">Tratamentos exclusivos</h2>
             <p className="text-muted-foreground">Procedimentos com tecnologia laser de última geração, focados em segurança e excelência.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { t: "Remoção a Laser", d: "Remoção segura e eficaz de micropigmentação antiga em sobrancelhas, lábios e olhos." },
               { t: "Limpeza de Pele", d: "Higienização profunda que renova a pele, devolvendo viço, equilíbrio e luminosidade." },
