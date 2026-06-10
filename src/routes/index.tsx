@@ -178,7 +178,8 @@ function Index() {
             </ul>
           </div>
           <img src={luana2.url} alt="Espaço de atendimento Luana Almeida"
-            className="rounded-3xl object-cover w-full aspect-[4/5] shadow-xl" />
+            className="rounded-3xl object-cover w-full aspect-[4/5] shadow-xl"
+            style={{ objectPosition: "center 20%" }} />
         </div>
       </section>
 
