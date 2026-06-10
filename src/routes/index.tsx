@@ -5,11 +5,9 @@ import luana2 from "@/assets/luana-2.jpg.asset.json";
 import luana3 from "@/assets/luana-3.jpg.asset.json";
 
 const WHATSAPP_NUMBER = "5519997774010";
-const WHATSAPP_MSG = encodeURIComponent(
-  "Olá Luana! Gostaria de agendar uma avaliação de micropigmentação a laser."
-);
+const WHATSAPP_DEFAULT_MSG = "Olá vim pelo site e gostaria de saber mais.";
 const waLink = (extra?: string) =>
-  `https://wa.me/${WHATSAPP_NUMBER}?text=${extra ? encodeURIComponent(extra) : WHATSAPP_MSG}`;
+  `https://api.whatsapp.com/send/?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(extra ?? WHATSAPP_DEFAULT_MSG)}&type=phone_number&app_absent=0`;
 
 export const Route = createFileRoute("/")({
   head: () => ({
