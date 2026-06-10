@@ -91,7 +91,8 @@ function Index() {
       <section id="sobre" className="py-24 px-6 bg-secondary/40">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <img src={luana3.url} alt="Luana Almeida no espaço de atendimento"
-            className="rounded-3xl object-cover w-full aspect-[4/5] shadow-xl order-2 md:order-1" />
+            className="rounded-3xl object-cover w-full aspect-[4/5] shadow-xl order-2 md:order-1"
+            style={{ objectPosition: "center 20%" }} />
           <div className="order-1 md:order-2">
             <p className="text-xs uppercase tracking-[0.25em] text-gold mb-4">Sobre Luana</p>
             <h2 className="text-4xl md:text-5xl mb-6">Cuidado, técnica e um olhar atento à sua singularidade.</h2>
@@ -190,16 +191,15 @@ function Index() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { n: "Marina S.", t: "Profissional impecável! A remoção ficou perfeita e o atendimento é encantador." },
-              { n: "Carolina P.", t: "Me senti acolhida do início ao fim. Resultado natural e além das expectativas." },
-              { n: "Beatriz L.", t: "Ambiente lindo, técnica de excelência. Já indiquei para todas as amigas." },
-            ].map((d) => (
-              <div key={d.n} className="rounded-2xl border border-border bg-card p-8">
+              { t: "Profissional impecável! A remoção ficou perfeita e o atendimento é encantador." },
+              { t: "Me senti acolhida do início ao fim. Resultado natural e além das expectativas." },
+              { t: "Ambiente lindo, técnica de excelência. Já indiquei para todas as amigas." },
+            ].map((d, i) => (
+              <div key={i} className="rounded-2xl border border-border bg-card p-8">
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-gold text-gold" />)}
                 </div>
-                <p className="text-muted-foreground italic mb-6 leading-relaxed">"{d.t}"</p>
-                <p className="font-display text-lg">{d.n}</p>
+                <p className="text-muted-foreground italic leading-relaxed">"{d.t}"</p>
               </div>
             ))}
           </div>
