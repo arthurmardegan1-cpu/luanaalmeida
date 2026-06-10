@@ -4,7 +4,7 @@ import luana1 from "@/assets/luana-1.jpg.asset.json";
 import luana2 from "@/assets/luana-2.jpg.asset.json";
 import luana3 from "@/assets/luana-3.jpg.asset.json";
 
-const WHATSAPP_NUMBER = "5500000000000"; // TODO: substituir pelo número real
+const WHATSAPP_NUMBER = "5519997774010";
 const WHATSAPP_MSG = encodeURIComponent(
   "Olá Luana! Gostaria de agendar uma avaliação de micropigmentação a laser."
 );
