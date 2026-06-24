@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MessageCircle, Sparkles, ShieldCheck, Star, MapPin, Instagram, Clock } from "lucide-react";
-import luana1 from "@/assets/luana-1.jpg.asset.json";
-import luana2 from "@/assets/luana-2.jpg.asset.json";
-import luana3 from "@/assets/luana-3.jpg.asset.json";
+import luana1 from "@/assets/luana-1.jpg";
+import luana2 from "@/assets/luana-2.jpg";
+import luana3 from "@/assets/luana-3.jpg";
 
 const WHATSAPP_NUMBER = "5519997774010";
 const WHATSAPP_DEFAULT_MSG = "Olá vim pelo site e gostaria de saber mais.";
@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Realce sua beleza natural com micropigmentação a laser. Agende sua avaliação com Luana Almeida pelo WhatsApp." },
       { property: "og:title", content: "Luana Almeida — Micropigmentação a Laser" },
       { property: "og:description", content: "Técnica refinada, resultado natural. Agende sua avaliação." },
-      { property: "og:image", content: luana1.url },
+      { property: "og:image", content: luana1 },
     ],
   }),
   component: Index,
@@ -80,7 +80,7 @@ function Index() {
           </div>
           <div className="relative">
             <div className="absolute -inset-4 rounded-3xl" style={{ background: "var(--gradient-luxury)", opacity: 0.15 }} />
-            <img src={luana1.url} alt="Luana Almeida — Especialista em Micropigmentação a Laser"
+            <img src={luana1} alt="Luana Almeida — Especialista em Micropigmentação a Laser"
               className="relative rounded-3xl object-cover w-full aspect-[4/5] shadow-2xl"
               style={{ objectPosition: "center 25%" }} />
           </div>
@@ -90,7 +90,7 @@ function Index() {
       {/* Sobre */}
       <section id="sobre" className="py-24 px-6 bg-secondary/40">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <img src={luana3.url} alt="Luana Almeida no espaço de atendimento"
+          <img src={luana3} alt="Luana Almeida no espaço de atendimento"
             className="rounded-3xl object-cover w-full aspect-[4/5] shadow-xl order-2 md:order-1"
             style={{ objectPosition: "center 20%" }} />
           <div className="order-1 md:order-2">
@@ -177,7 +177,7 @@ function Index() {
               ))}
             </ul>
           </div>
-          <img src={luana2.url} alt="Espaço de atendimento Luana Almeida"
+          <img src={luana2} alt="Espaço de atendimento Luana Almeida"
             className="rounded-3xl object-cover w-full aspect-[4/5] shadow-xl"
             style={{ objectPosition: "center 20%" }} />
         </div>
